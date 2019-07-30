@@ -33,6 +33,9 @@
 
 @media (min-width: 1200px)
   .navbar
+    &__logo
+      margin-top: 1px
+      margin-left: -1px
     &__button
       font-weight: bold
       padding: 17.5px 28.5px
@@ -41,6 +44,22 @@
         font-weight: bold
         letter-spacing: 0.2px
         margin-top: 6px
+@media (max-width: 320px)
+  .navbar
+    &__logo
+      width: 30%
+      margin-left: 13px
+      margin-top: 9px      
+    &__button 
+      font-size: 10px
+      font-weight: bold
+      margin-right: 13px
+      padding: 14px 26.7px
+      margin-top: 4px
+      border-radius: 5px  
+      
+     
+
 
 
 
