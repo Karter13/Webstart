@@ -5,7 +5,8 @@
         "../sass/style.sass",
         "../sass/_colors.sass",
         "../sass/_interface.sass",
-        "../sass/blocks/_navbar.sass"
+        "../sass/blocks/_navbar.sass",
+        "../sass/blocks/_hero.sass"
     ],
     "names": [],
     "file": "style.css"
