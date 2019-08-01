@@ -59,12 +59,35 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 14px 30px 18px 30px;
 }
 
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
+}
+
+.section {
+  padding: 78px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-top: 0;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 23px 24px 23px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 /*Импорт стилей шапки*/
@@ -302,5 +325,88 @@ img {
   .hero-list__item {
     margin-bottom: 20px;
   }
+}
+
+/*стили для блока offer*/
+.offer {
+  background: url("../img/offer/offer-png.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.offer-block {
+  width: 50%;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  max-width: 495px;
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 28px;
+  letter-spacing: -0.3px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 495px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-info__left {
+  min-width: 230px;
+  width: 50%;
+}
+
+.offer__textoverphone {
+  display: block;
+}
+
+.offer__phone {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
