@@ -619,4 +619,18 @@ img {
   top: 0;
   right: 0;
 }
+
+/*стили для кнопки прокрутки*/
+#button-up {
+  display: none;
+  left: 20px;
+  margin: 0;
+  position: fixed;
+  bottom: 50px;
+  padding: 5px 5px 0 5px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px #999;
+          box-shadow: 0 2px 4px #999;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
