@@ -47,8 +47,7 @@
                 <div class="hero-block">
                     <div class="hero-text">
                         <h1 class="hero-text__title">
-                            Внутренняя отделка
-                            помещений "под ключ"
+                            Внутренняя отделка помещений "под ключ"
                         </h1>
                         <span class="hero-text__subtitle">
                             с гарантией качества, прописанной в договоре
@@ -97,9 +96,7 @@
                 <div class="offer-block">
 
                     <h2 class="section-title offer__title">
-                        Мы бесплатно разработаем
-                        дизайн-проект Вашего жилья
-                        и реализуем его!
+                        Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                     </h2>
                     <!-- /.section-title -->
 
@@ -109,13 +106,19 @@
                     </span>
                     <!-- /.section-subtitle -->
 
-                    <form action="#" class="form offer__form">
-                        <input type="text" class="input offer__input" placeholder="Ваше имя">
-                        <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+                    <form action="#" id="offer-form" class="form offer__form">
+                        <input type="text" id="form-clean1" name="username" class="input offer__input"
+                            placeholder="Ваше имя">
+                        <input type="tel" id="form-clean2" name="userphone" class="input offer__input"
+                            placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект
                         </button>
                     </form>
+
+                    <div class="success"></div>
+
                     <!-- /.form offer__form -->
+
 
                     <div class="offer-info">
                         <div class="offer-info__left">Наш менеджер перезвонит Вам в течение 60 секунд
@@ -135,7 +138,7 @@
         <div class="modal" id="modal">
             <div class="modal-dialog">
                 <button class="modal-dialog__close" id="close">Закрыть</button>
-                <h4 class="modal-dialog__title">Всплывающее окно</h4>
+                <h4 class="modal-dialog__title">Спасибо за заявку, скоро мы вам перезвоним!</h4>
             </div>
             <!-- /.modal-dialog -->
         </div>
@@ -153,6 +156,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="js/modal.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
