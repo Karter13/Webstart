@@ -76,6 +76,7 @@ img {
   margin-top: 0;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -88,6 +89,10 @@ img {
   padding: 23px 24px 23px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 /*Импорт стилей шапки*/
@@ -425,6 +430,7 @@ img {
   line-height: 35px;
   margin-bottom: 18px;
   letter-spacing: -0.5px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -549,7 +555,7 @@ img {
 
 @media (max-width: 567px) {
   .offer {
-    padding: 55px 0 78px;
+    padding: 55px 0 50px;
   }
   .offer-block {
     padding-left: 4px;
@@ -587,6 +593,54 @@ img {
   }
 }
 
+/*стили для слайдера*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/fon-portfolio.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  font-size: 29px;
+  max-width: 786px;
+  margin: auto;
+  margin-top: 13px;
+  margin-bottom: 91px;
+  line-height: 45px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 68px;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding-top: 28px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 39px;
+  }
+  .portfolio__arrows {
+    margin-top: 48px;
+  }
+  .slider__image {
+    max-width: 85%;
+  }
+}
+
 /*стили для модального окна*/
 .modal {
   position: fixed;
@@ -605,6 +659,15 @@ img {
 }
 
 .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   min-width: 450px;
   width: 90%;
