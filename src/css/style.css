@@ -675,8 +675,9 @@ img {
 }
 
 .price__card-animation {
-  -webkit-animation: boxHeight 5s;
-          animation: boxHeight 5s;
+  visibility: visibility;
+  -webkit-animation: boxHeight 3s alternate linear;
+          animation: boxHeight 3s alternate linear;
 }
 
 .card {
@@ -830,23 +831,23 @@ img {
 
 @-webkit-keyframes boxHeight {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
 @keyframes boxHeight {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
@@ -868,6 +869,7 @@ img {
 }
 
 .modal-dialog {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,18 +880,106 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  min-width: 450px;
+  max-width: 1170px;
   width: 90%;
   min-height: 200px;
   background-color: #fff;
   padding: 40px;
-  position: relative;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal__content {
+  -ms-flex-preferred-size: 61%;
+      flex-basis: 61%;
+}
+
+.modal__column {
+  padding: 40px 100px;
+}
+
+.modal__title {
+  max-width: 300px;
+  width: 100%;
+  font-size: 21px;
+  line-height: 33px;
+  margin: 40px auto 52px;
+}
+
+.modal__subtitle {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 53px;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__input {
+  max-width: 370px;
+  width: 100%;
+}
+
+.modal__name {
+  margin-bottom: 15px;
+}
+
+.modal__phone {
+  margin-bottom: 30px;
+}
+
+.modal__button {
+  max-width: 370px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+  padding: 26px 100px 26px 100px;
+  margin-bottom: 33px;
+}
+
+.modal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modal-info__textoverphone {
+  margin-bottom: 15px;
+}
+
+.modal-info__phone {
+  text-decoration: none;
+  color: #333333;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
 }
 
 /*стили для кнопки прокрутки*/

@@ -9,20 +9,94 @@
   &_activ
     display: flex
   &-dialog 
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
     margin: auto
-    min-width: 450px
+    max-width: 1170px
     width: 90%
     min-height: 200px
     background-color: #fff
-    padding: 40px
-    position: relative
+    padding: 40px    
     &__close
       position: absolute
       top: 0
       right: 0
+  &__content
+    flex-basis: 61%
+  &__column     
+    padding: 40px 100px
+  &__title    
+    max-width: 300px
+    width: 100%   
+    font-size: 21px    
+    line-height: 33px         
+    margin: 40px auto 52px   
+  &__subtitle 
+    display: block  
+    text-align: center   
+    font-size: 16px    
+    line-height: 35px
+    margin-bottom: 53px    
+  &__form
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+  &__input
+    max-width: 370px
+    width: 100%
+  &__name
+    margin-bottom: 15px
+  &__phone
+    margin-bottom: 30px
+  &__button
+    max-width: 370px
+    width: 100%
+    font-size: 16px      
+    +bold
+    padding: 26px 100px 26px 100px
+    margin-bottom: 33px
+  &-info 
+    display: flex      
+    flex-direction: column
+    text-align: center 
+    &__textoverphone
+      margin-bottom: 15px
+    &__phone
+      text-decoration: none 
+      color: $text-color
+      margin-bottom: 36px      
+      font-size: 24px      
+      line-height: 24px
+      +bold
+      
+
+    
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
     
