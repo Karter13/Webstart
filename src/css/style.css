@@ -217,6 +217,11 @@ img {
           justify-content: space-between;
 }
 
+.hero-image {
+  -webkit-animation: boxOpasity 6s;
+          animation: boxOpasity 6s;
+}
+
 .hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,6 +674,11 @@ img {
   margin-bottom: 30px;
 }
 
+.price__card-animation {
+  -webkit-animation: boxHeight 5s;
+          animation: boxHeight 5s;
+}
+
 .card {
   text-align: center;
   border: 1px solid #e8e8e8;
@@ -797,6 +807,46 @@ img {
   }
   .card__text {
     padding: 28px 0 33px;
+  }
+}
+
+/*стили анимаций*/
+@-webkit-keyframes boxOpasity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes boxOpasity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes boxHeight {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes boxHeight {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

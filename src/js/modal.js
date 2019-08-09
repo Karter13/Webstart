@@ -1,20 +1,20 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let button = $("#button");
     let modal = $("#modal");
     let close = $("#close");
 
-    button.on("click", function() {
+    button.on("click", function () {
         modal.addClass("modal_activ");
     });
 
-    close.on("click", function() {
+    close.on("click", function () {
         modal.removeClass("modal_activ");
     });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         if ($(this).scrollTop() > 50) {
             $('#button-up').fadeIn();
@@ -23,10 +23,12 @@ $(document).ready(function() {
         }
     });
 
-    $('#button-up').click(function() {
+    $('#button-up').click(function () {
         $('body,html').animate({
             scrollTop: 0
         }, 1000);
     });
 
 });
+
+
