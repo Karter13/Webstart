@@ -111,8 +111,9 @@
                     <form action="#" id="offer-form" class="form offer__form">
                         <input type="text" id="form-clean1" name="username" class="input offer__input wow bounceInLeft"
                             data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя">
-                        <input type="tel" id="form-clean2" name="userphone" class="input offer__input wow bounceInLeft"
-                            data-wow-delay="0.2s" data-wow-offset="100" placeholder="Ваш телефон">
+                        <input type="tel" id="form-clean2" name="phone"
+                            class="input offer__input wow bounceInLeft phone" data-wow-delay="0.2s"
+                            data-wow-offset="100" placeholder="Ваш телефон">
                         <button class="button offer__button wow bounceInLeft" data-wow-delay="0.9s">
                             Получить бесплатный дизайн-проект
                         </button>
@@ -326,10 +327,10 @@
                             Для этого заполните форму ниже
                         </span>
 
-                        <form action="">
-                            <input type="text" class="input brif__input" placeholder="Ваше имя">
-                            <input type="tel" class="input brif__input" placeholder="Ваш телефон">
-                            <input type="text" class="input brif__input" placeholder="Ваша почта">
+                        <form action="#" id="brif-form">
+                            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+                            <input type="email" name="email" class="input brif__input" placeholder="Ваша email">
                             <button class="button brif__button">Рассчитать стоимость</button>
                             <span class="form__description">
                                 Мы перезвоним Вам в течение 60 секунд
@@ -372,7 +373,7 @@
                     <form action="#" id="modal-form" class="form modal__form">
                         <input type="text" name="username" class="input modal__input modal__name"
                             placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input modal__input modal__phone"
+                        <input type="tel" name="phone" class="input modal__input modal__phone phone"
                             placeholder="Ваш телефон">
                         <button class="button modal__button">
                             Узнать стоимость
@@ -407,15 +408,96 @@
     <script src="js/modal.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 
-    <script src="js/wow.min.js">
-    </script>
+
     <script>
+
+        /*Инициализация WOW.JS*/
         new WOW().init();
-    </script>
 
-    <script>
         $(document).ready(function () {
+
+            /*Валидация форм*/
+            $("#brif-form").validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15
+                    },
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Укажите имя!",
+                        minlength: jQuery.validator.format("Еще ввести{0} символа!"),
+                        maxlength: jQuery.validator.format("Вы ввели более{0} символов!")
+                    },
+                    phone: {
+                        required: "Укажите телефон!"
+                    },
+                    email: {
+                        required: "Укажите email!",
+                        email: "Введите корректный email!"
+                    }
+                }
+            });
+
+            $("#offer-form").validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15
+                    },
+                    phone: "required"
+                },
+                messages: {
+                    username: {
+                        required: "Укажите имя!",
+                        minlength: jQuery.validator.format("Еще ввести{0} символа!"),
+                        maxlength: jQuery.validator.format("Вы ввели более{0} символов!")
+                    },
+                    phone: {
+                        required: "Укажите телефон!"
+                    }
+                }
+            });
+
+            $("#modal-form").validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15
+                    },
+                    phone: "required"
+                },
+                messages: {
+                    username: {
+                        required: "Укажите имя!",
+                        minlength: jQuery.validator.format("Еще ввести{0} символа!"),
+                        maxlength: jQuery.validator.format("Вы ввели более{0} символов!")
+                    },
+                    phone: {
+                        required: "Укажите телефон!"
+                    }
+                }
+            });
+
+            /*Маска для телефона*/
+            $(".phone").mask("8 (999) 999 - 99 - 99");
+
+
+
+            /*Скрипт слайдера*/
             $(".slider").slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
