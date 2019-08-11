@@ -422,6 +422,8 @@
 
             /*Валидация форм*/
             $("#brif-form").validate({
+
+                errorClass: "invalid",
                 rules: {
                     username: {
                         required: true,
@@ -451,6 +453,7 @@
             });
 
             $("#offer-form").validate({
+                errorClass: "invalid",
                 rules: {
                     username: {
                         required: true,
@@ -472,6 +475,7 @@
             });
 
             $("#modal-form").validate({
+                errorClass: "invalid",
                 rules: {
                     username: {
                         required: true,
@@ -491,6 +495,19 @@
                     }
                 }
             });
+
+            /*Меняем ted label на div в формах*/
+
+            // $('label.invalid').replaceWith(function () {
+            //     return $("<div />", { html: $(this).html() });
+            // });
+
+            $('label.invalid').replaceWith(function () {
+                return $("<div />").append($(this).contents());
+            });
+
+            // $("label.invalid").replaceWith("<div>New heading</div>");
+
 
             /*Маска для телефона*/
             $(".phone").mask("8 (999) 999 - 99 - 99");

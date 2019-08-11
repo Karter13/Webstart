@@ -96,6 +96,15 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
+label.invalid {
+  display: block;
+  border: none;
+}
+
 /*Импорт стилей шапки*/
 .navbar {
   padding: 8px 0;
@@ -857,6 +866,7 @@ img {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
+  padding: 27px 6px 60px;
 }
 
 .brif-block {
@@ -1064,9 +1074,6 @@ img {
   .form__description {
     text-align: center;
     font-size: 14px;
-  }
-  .brif {
-    padding: 27px 6px 60px;
   }
 }
 
