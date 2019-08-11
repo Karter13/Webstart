@@ -1077,6 +1077,148 @@ label.invalid {
   }
 }
 
+/*стили для блока bath*/
+.bath-block {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bath-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.bath-block__image {
+  width: 100%;
+}
+
+.bath__image {
+  max-width: 120px;
+  width: 100%;
+}
+
+.bath__info {
+  max-width: 200px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.bath__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.bath__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.bath__count {
+  display: block;
+}
+
+.bath__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.restroom-block__image {
+  width: 100%;
+}
+
+.restroom__image {
+  max-width: 120px;
+  width: 100%;
+}
+
+.restroom__info {
+  max-width: 200;
+  margin-left: 30px;
+}
+
+.restroom__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.restroom__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.restroom__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.combi-block__image {
+  width: 100%;
+}
+
+.combi__image {
+  max-width: 120px;
+  width: 100%;
+}
+
+.combi__info {
+  max-width: 200px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.combi__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.combi__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.combi__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
 /*стили для модального окна*/
 .modal {
   position: fixed;
@@ -1102,9 +1244,9 @@ label.invalid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: auto;
   max-width: 1170px;
   width: 90%;
@@ -1117,15 +1259,12 @@ label.invalid {
   position: absolute;
   top: 0;
   right: 0;
+  height: 20px;
 }
 
-.modal__content {
-  -ms-flex-preferred-size: 61%;
-      flex-basis: 61%;
-}
-
-.modal__column {
-  padding: 40px 100px;
+.modal-column {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
 }
 
 .modal__title {
