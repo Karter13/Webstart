@@ -109,11 +109,8 @@
                     <!-- /.section-subtitle -->
 
                     <form action="#" id="offer-form" class="form offer__form">
-                        <input type="text" id="form-clean1" name="username" class="input offer__input wow bounceInLeft"
-                            data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя">
-                        <input type="tel" id="form-clean2" name="phone"
-                            class="input offer__input wow bounceInLeft phone" data-wow-delay="0.2s"
-                            data-wow-offset="100" placeholder="Ваш телефон">
+                        <input type="text" id="form-clean1" name="username" class="input offer__input wow bounceInLeft" data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя">
+                        <input type="tel" id="form-clean2" name="phone" class="input offer__input wow bounceInLeft phone" data-wow-delay="0.2s" data-wow-offset="100" placeholder="Ваш телефон">
                         <button class="button offer__button wow bounceInLeft" data-wow-delay="0.9s">
                             Получить бесплатный дизайн-проект
                         </button>
@@ -148,17 +145,12 @@
                 </h2>
 
                 <div class="slider">
-                    <div class="slider__item wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="300"><img
-                            class="slider__image" src="img/portfolio/slider1.jpg" alt="business room"></div>
-                    <div class="slider__item wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="300"><img
-                            class="slider__image" src="img/portfolio/slider2.jpg" alt="guest room"></div>
-                    <div class="slider__item wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="300"><img
-                            class="slider__image" src="img/portfolio/slider3.jpg" alt="bedroom">
+                    <div class="slider__item wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="300"><img class="slider__image" src="img/portfolio/slider1.jpg" alt="business room"></div>
+                    <div class="slider__item wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="300"><img class="slider__image" src="img/portfolio/slider2.jpg" alt="guest room"></div>
+                    <div class="slider__item wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="300"><img class="slider__image" src="img/portfolio/slider3.jpg" alt="bedroom">
                     </div>
-                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider1.jpg"
-                            alt="business room"></div>
-                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider2.jpg"
-                            alt="guest room"></div>
+                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider1.jpg" alt="business room"></div>
+                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider2.jpg" alt="guest room"></div>
                     <div class="slider__item"><img class="slider__image" src="img/portfolio/slider3.jpg" alt="bedroom">
                     </div>
                 </div>
@@ -359,7 +351,7 @@
                 </div>
 
 
-                <div class="modal-column">
+                <div class="modal-column modal-column_right">
 
                     <h2 class="section-title modal__title">
                         Узнайте точную стоимость ремонта по телефону!
@@ -371,10 +363,8 @@
                     <!-- /.section-subtitle -->
 
                     <form action="#" id="modal-form" class="form modal__form">
-                        <input type="text" name="username" class="input modal__input modal__name"
-                            placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input modal__input modal__phone phone"
-                            placeholder="Ваш телефон">
+                        <input type="text" name="username" class="input modal__input modal__name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" class="input modal__input modal__phone phone" placeholder="Ваш телефон">
                         <button class="button modal__button">
                             Узнать стоимость
                         </button>
@@ -402,8 +392,7 @@
     </div>
     <!-- <script src="js/main.js"></script> -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="js/modal.js"></script>
     <script src="js/scripts.js"></script>
@@ -414,11 +403,10 @@
 
 
     <script>
-
         /*Инициализация WOW.JS*/
         new WOW().init();
 
-        $(document).ready(function () {
+        $(document).ready(function() {
 
             /*Валидация форм*/
             $("#brif-form").validate({
@@ -502,7 +490,7 @@
             //     return $("<div />", { html: $(this).html() });
             // });
 
-            $('label.invalid').replaceWith(function () {
+            $('label.invalid').replaceWith(function() {
                 return $("<div />").append($(this).contents());
             });
 

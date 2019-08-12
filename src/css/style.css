@@ -1030,6 +1030,9 @@ label.invalid {
     min-width: 250px;
     width: 100%;
   }
+  .interview-list {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -1059,7 +1062,7 @@ label.invalid {
   }
   .interview-list__text {
     font-size: 13px;
-    max-width: 233px;
+    max-width: 200px;
     width: 100%;
     font-weight: 600;
   }
@@ -1098,11 +1101,46 @@ label.invalid {
 
 .bath-block__image {
   width: 100%;
+  max-width: 120px;
 }
 
-.bath__image {
-  max-width: 120px;
+.bath-block__subtitle {
+  font-size: 14px;
+  margin-top: 53px;
+  margin-bottom: 28px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.bath-block__list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.bath-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  min-width: 388px;
   width: 100%;
+}
+
+.bath-block__point {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #ffd200;
+  border-radius: 50%;
+  margin-right: 13px;
 }
 
 .bath__info {
@@ -1219,6 +1257,443 @@ label.invalid {
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .bath-block {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .bath-block__subtitle {
+    margin-top: 43px;
+    margin-bottom: 20px;
+  }
+  .bath-block__item {
+    margin-bottom: 10px;
+  }
+  .bath__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .bath__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .bath__title {
+    font-size: 15px;
+  }
+  .restroom__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .restroom__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .restroom__title {
+    font-size: 15px;
+  }
+  .combi__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .combi__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .combi__title {
+    font-size: 15px;
+  }
+}
+
+/*стили для блока living*/
+.living-block {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.living-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.living-block_image {
+  width: 100%;
+}
+
+.living-block__subtitle {
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 28px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.living-block__list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.living-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  min-width: 388px;
+  width: 100%;
+}
+
+.living-block__point {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #ffd200;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.living__image {
+  width: 100%;
+  max-width: 130px;
+}
+
+.living__info {
+  max-width: 200px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.living__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.living__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.living__count {
+  display: block;
+}
+
+.living__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.bedroom-block__image {
+  width: 100%;
+}
+
+.bedroom__image {
+  max-width: 130px;
+  width: 100%;
+}
+
+.bedroom__info {
+  max-width: 200;
+  margin-left: 30px;
+}
+
+.bedroom__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.bedroom__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.bedroom__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.childroom-block__image {
+  width: 100%;
+}
+
+.childroom__image {
+  max-width: 130px;
+  width: 100%;
+}
+
+.childroom__info {
+  max-width: 200px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.childroom__title {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 27px;
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+.childroom__title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.childroom__count_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .living-block {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .living-block__subtitle {
+    margin-top: 43px;
+    margin-bottom: 20px;
+  }
+  .living-block__item {
+    margin-bottom: 10px;
+  }
+  .living__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .living__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .living__title {
+    font-size: 15px;
+  }
+  .bedroom__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .bedroom__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .bedroom__title {
+    font-size: 15px;
+  }
+  .childroom__image {
+    width: 100%;
+    max-width: 100px;
+  }
+  .childroom__info {
+    max-width: 175px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .childroom__title {
+    font-size: 15px;
+  }
+}
+
+/*стили для блока office*/
+.office-block {
+  padding: 30px 80px 200px 40px;
+}
+
+.office-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.office__image {
+  max-width: 439px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.office__text {
+  display: block;
+  font-size: 20px;
+  max-width: 470px;
+}
+
+@media (max-width: 1200px) {
+  .office__text {
+    font-size: 15px;
+  }
+}
+
+/*стили для блока novostroi*/
+.novostroi-block {
+  padding: 30px 80px 200px 40px;
+}
+
+.novostroi-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.novostroi__image {
+  max-width: 439px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.novostroi__text {
+  display: block;
+  font-size: 20px;
+  max-width: 470px;
+}
+
+@media (max-width: 1200px) {
+  .novostroi__text {
+    font-size: 15px;
+  }
+}
+
+/*стили для блока kitchen*/
+.kitchen-block {
+  padding: 30px 80px 200px 40px;
+}
+
+.kitchen-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kitchen__image {
+  max-width: 439px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.kitchen__text {
+  display: block;
+  font-size: 20px;
+  max-width: 470px;
+}
+
+@media (max-width: 1200px) {
+  .kitchen__text {
+    font-size: 15px;
+  }
+}
+
+/*стили для блока mansard*/
+.mansard-block {
+  padding: 30px 80px 200px 40px;
+}
+
+.mansard-block_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mansard__image {
+  max-width: 439px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.mansard__text {
+  display: block;
+  font-size: 20px;
+  max-width: 470px;
+}
+
+@media (max-width: 1200px) {
+  .mansard__text {
+    font-size: 15px;
+  }
+}
+
 /*стили для модального окна*/
 .modal {
   position: fixed;
@@ -1252,7 +1727,6 @@ label.invalid {
   width: 90%;
   min-height: 200px;
   background-color: #fff;
-  padding: 40px;
 }
 
 .modal-dialog__close {
@@ -1262,9 +1736,17 @@ label.invalid {
   height: 20px;
 }
 
-.modal-column {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+.modal-column_left {
+  background-color: #f7f7f7;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px 0px 40px 40px;
+}
+
+.modal-column_right {
+  max-width: 570px;
+  width: 100%;
+  padding: 40px 40px 40px 0px;
 }
 
 .modal__title {
@@ -1345,6 +1827,92 @@ label.invalid {
   line-height: 24px;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .modal-column_left {
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  .modal-column_right {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+  }
+  .modal__title {
+    font-size: 19px;
+    margin-bottom: 25px;
+  }
+  .modal__subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .modal__input {
+    font-size: 15px;
+  }
+  .modal__button {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal-info__textoverphone {
+    font-size: 15px;
+  }
+  .modal-info__phone {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  .modal-dialog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal-column_left {
+    display: none;
+  }
+  .modal-column_right {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .modal-column_right {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+  }
+  .modal__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  .modal__subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+  }
+  .modal__input {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .modal__button {
+    font-size: 14px;
+    padding: 17px 10px;
+  }
+  .modal-info__textoverphone {
+    font-size: 14px;
+  }
+  .modal-info__phone {
+    font-size: 19px;
+  }
 }
 
 /*стили для кнопки прокрутки*/
