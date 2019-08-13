@@ -1,11 +1,7 @@
 .footer 
   display: flex
-  justify-content: flex-start 
-  // position: relative
-.map
-  // position: absolute 
-  // left: 0
-  // top: 0
+  justify-content: flex-start   
+.map 
   width: 50% 
 .container
     &-footer
@@ -49,7 +45,6 @@
       color: $text-color      
     &_bold
       +bold
-
 @media (max-width: 1200px) 
   .contacts    
     padding-top: 50px
@@ -59,7 +54,8 @@
     justify-content: flex-start
     flex-direction: column-reverse
     align-items: center
-  .map    
+  .map  
+    height: 500px
     width: 100%      
   .container
     &-footer

@@ -826,7 +826,7 @@ label.invalid {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
-  padding: 27px 6px 60px;
+  padding: 27px -1px 60px;
 }
 
 .brif-block {
@@ -1040,6 +1040,136 @@ label.invalid {
   }
 }
 
+/*стили для блока materials*/
+.materials-title {
+  width: 100%;
+  background-color: #ffc000;
+}
+
+.materials-title__text {
+  display: block;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+  padding: 87px 0 93px;
+}
+
+.materials-posters {
+  max-width: 1170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto 100px;
+}
+
+.poster__card {
+  height: 410px;
+  max-width: 370px;
+  width: 30%;
+  margin-right: 30px;
+}
+
+.poster__card:last-child {
+  margin-right: 0;
+}
+
+.poster_left {
+  background-image: url("../img/materials/mat_1.png");
+  background-size: cover;
+}
+
+.poster_center {
+  background-image: url("../img/materials/mat_2.png");
+  background-size: cover;
+}
+
+.poster_right {
+  background-image: url("../img/materials/mat_3.png");
+  background-size: cover;
+}
+
+.poster__text {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 23px 40px 0 27px;
+}
+
+.poster_bold {
+  font-family: 'Museo Sans Cyrl bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .materials-title__text {
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .materials-posters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .poster {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 880px) {
+  .materials-title__text {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .materials-posters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .poster__card {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .materials-title__text {
+    max-width: 270px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 71px 0 79px;
+  }
+  .materials-posters {
+    margin: 54px auto 100px;
+  }
+  .poster__card {
+    min-height: 304px;
+    height: 100%;
+    width: 86%;
+  }
+  .poster__text {
+    font-size: 12px;
+    line-height: 16.83px;
+    margin: 19px 40px 0 22px;
+  }
+}
+
 /*стили для блока footer*/
 .footer {
   display: -webkit-box;
@@ -1149,6 +1279,7 @@ label.invalid {
             align-items: center;
   }
   .map {
+    height: 500px;
     width: 100%;
   }
   .container-footer_right {

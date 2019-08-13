@@ -1,0 +1,98 @@
+.materials
+  &-title
+    width: 100%
+    background-color: $offer-border  
+    &__text
+      display: block     
+      max-width: 1000px
+      width: 100%
+      margin: 0 auto
+      text-align: center
+      font-size: 32px      
+      line-height: 50px
+      padding: 87px 0 93px    
+  &-posters
+    max-width: 1170px        
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center  
+    margin: 100px auto 100px   
+.poster
+  &__card         
+    height: 410px    
+    max-width: 370px
+    width: 30%
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+  &_left
+    background-image: url("../img/materials/mat_1.png") 
+    background-size: cover  
+  &_center
+    background-image: url("../img/materials/mat_2.png")
+    background-size: cover
+  &_right   
+    background-image: url("../img/materials/mat_3.png")  
+    background-size: cover 
+  &__text
+    font-size: 16px     
+    line-height: 23px
+    margin: 23px 40px 0 27px
+  &_bold
+    +bold  
+    
+@media (max-width: 1200px) 
+  .materials
+    &-title
+      &__text
+        font-size: 28px 
+        padding-left: 20px
+        padding-right: 20px
+    &-posters   
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center 
+  .poster
+    margin-bottom: 30px    
+@media (max-width: 880px)   
+  .materials
+    &-title
+      &__text
+        font-size: 25px 
+        line-height: 40px        
+    &-posters   
+      flex-direction: column
+  .poster
+    &__card
+      margin-right: 0 
+      width: 100%
+
+@media (max-width: 580px)
+  .materials
+    &-title
+      &__text
+        max-width: 270px
+        width: 100%
+        font-size: 18px 
+        line-height: 21px  
+        padding: 71px 0 79px
+    &-posters
+      margin: 54px auto 100px
+  .poster
+    &__card   
+      min-height: 304px
+      height: 100%       
+      width: 86%
+    &__text
+      font-size: 12px      
+      line-height: 16.83px
+      margin: 19px 40px 0 22px
+
+      
+
+
+
+
+    
+    
