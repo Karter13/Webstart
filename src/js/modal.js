@@ -4,9 +4,13 @@ $(document).ready(function () {
     let modal = $("#modal");
     let close = $("#close");
     let cardLink = $(".card__link");
+    let left = $(".modal-column_left");
+    let modalof = $(".modal-dialog");
 
     /*Для кнопки Перезвони мне*/
     button.on("click", function () {
+        left.addClass("modal_left");
+        modalof.css({ "max-width": "500px" });
         modal.addClass("modal_activ");
     });
 

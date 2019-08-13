@@ -1265,7 +1265,7 @@ label.invalid {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
   .footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1979,6 +1979,10 @@ label.invalid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal_left {
+  display: none;
 }
 
 .modal-dialog {
