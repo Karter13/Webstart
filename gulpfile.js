@@ -3,12 +3,7 @@ let cleanCSS = require('gulp-clean-css');
 let htmlmin = require('gulp-htmlmin');
 var tinypng = require('gulp-tinypng-compress');
 
-gulp.task('default', defaultTask);
 
-function defaultTask(done) {
-  console.log('Задача выполнена');
-  done();
-}
 
 gulp.task('minify-css', function (done) {
   return gulp.src('./src/css/*.css')
@@ -49,5 +44,10 @@ gulp.task('tinypng', function (done) {
   done();
 });
 
+
+gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
+
+  done();
+}))
 
 // exports.default = defaultTask
