@@ -4,6 +4,8 @@
     src: local('../fonts/MuseoSansKyrl/MuseoSansCyrl-300'), url('../fonts/MuseoSansKyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansKyrl/MuseoSansCyrl-300.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: auto;
+
 }
 
 @font-face {
@@ -12,6 +14,8 @@
     src: local('../fonts/MuseoSansKyrl/MuseoSansCyrl-700'), url('../fonts/MuseoSansKyrl/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansKyrl/MuseoSansCyrl-700.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
+
 }
 
 @mixin reg {
