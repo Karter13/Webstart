@@ -5,7 +5,6 @@
 // let close = document.querySelector("#close");
 
 
-
 // button.addEventListener("click", function() {
 //     modal.classList.add("modal_activ");
 
@@ -14,7 +13,6 @@
 //     }, 5000);
 
 // });
-
 
 
 // function timer() {
@@ -44,3 +42,4 @@ function initMap() {
         title: " г. Москва, ул. Ленина, д. 10, корпус 2, оф. 308"
     });
 }
+

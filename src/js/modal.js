@@ -25,6 +25,8 @@ $(document).ready(function () {
 
     close.on("click", function () {
         modal.removeClass("modal_activ");
+        left.removeClass("modal_left");
+        modalof.css({ "max-width": "50%" });
     });
 });
 
@@ -47,6 +49,24 @@ $(document).ready(function () {
         }, 1000);
     });
 
+});
+
+$(document).ready(function () {
+    mapShown = false;
+    $(window).scroll(function () {
+        if (!mapShown) {
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 5000) {
+                showmap();
+                mapShown = true;
+            }
+        }
+    });
+    function showmap() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A66df74f822098f131d5f0e4d39e17c3012742f03c1639c1d9421b8e4cc68209b&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"
+        document.getElementById("map").appendChild(script);
+    }
 });
 
 
