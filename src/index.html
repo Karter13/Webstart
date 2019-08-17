@@ -135,10 +135,11 @@
                     <form action="#" id="offer-form" onsubmit="ym(54896380, 'reachGoal', 'form '); return true;"
                         class="form offer__form">
                         <input type="text" id="form-clean1" name="username" class="input offer__input wow bounceInLeft"
-                            data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя">
+                            data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя" required minlength="2"
+                            maxlength="15">
                         <input type="tel" id="form-clean2" name="phone"
                             class="input offer__input wow bounceInLeft phone" data-wow-delay="0.2s"
-                            data-wow-offset="100" placeholder="Ваш телефон">
+                            data-wow-offset="100" placeholder="Ваш телефон" required>
                         <button class="button offer__button wow bounceInLeft" data-wow-delay="0.9s">
                             Получить бесплатный дизайн-проект
                         </button>
@@ -456,7 +457,6 @@
                         <form action="#" id="brif-form">
                             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
                             <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-                            <input type="email" name="email" class="input brif__input" placeholder="Ваша email">
                             <button class="button brif__button">Рассчитать стоимость</button>
                             <span class="form__description">
                                 Мы перезвоним Вам в течение 60 секунд
@@ -625,27 +625,27 @@
                 }
             });
 
-            $("#offer-form").validate({
-                errorClass: "invalid",
-                rules: {
-                    username: {
-                        required: true,
-                        minlength: 2,
-                        maxlength: 15
-                    },
-                    phone: "required"
-                },
-                messages: {
-                    username: {
-                        required: "Укажите имя!",
-                        minlength: jQuery.validator.format("Еще ввести{0} символа!"),
-                        maxlength: jQuery.validator.format("Вы ввели более{0} символов!")
-                    },
-                    phone: {
-                        required: "Укажите телефон!"
-                    }
-                }
-            });
+            // $("#offer-form").validate({
+            //     errorClass: "invalid",
+            //     rules: {
+            //         username: {
+            //             required: true,
+            //             minlength: 2,
+            //             maxlength: 15
+            //         },
+            //         phone: "required"
+            //     },
+            //     messages: {
+            //         username: {
+            //             required: "Укажите имя!",
+            //             minlength: jQuery.validator.format("Еще ввести{0} символа!"),
+            //             maxlength: jQuery.validator.format("Вы ввели более{0} символов!")
+            //         },
+            //         phone: {
+            //             required: "Укажите телефон!"
+            //         }
+            //     }
+            // });
 
             $("#modal-form").validate({
                 errorClass: "invalid",
@@ -707,8 +707,6 @@
             });
         });
     </script>
-
-
 
 
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZIukTFOX1tCzlPPoWBPFX46y1r2hUJMo&callback=initMap"
