@@ -3,6 +3,7 @@
   background-position: center right 
   background-size: contain
   position: relative 
+  padding-bottom: 87px
   &:before
     content: ''
     width: 50%
@@ -10,7 +11,7 @@
     position: absolute
     top: 0 
     left: 0
-    background-color: $fon-color    
+    background-color: $fon-color        
   &-block
     width: 50%
     position: relative
@@ -19,11 +20,15 @@
     line-height: 35px
     margin-bottom: 18px
     letter-spacing: -0.5px 
+    margin-top: 3px
     text-align: left
   &__subtitle
     max-width: 250px
-    margin-bottom: 30px
+    margin-bottom: 31px
+  &__form
+    margin-bottom: -3px  
   &__input    
+    outline: none
     margin-bottom: 30px
     width: 240px
     &:first-child
@@ -31,6 +36,7 @@
     &:focus
       border: 1px solid $offer-border
   &__button
+    outline: none
     max-width: 495px
     width: 100%
     min-height: 70px
@@ -44,8 +50,9 @@
     width: 100%
     font-size: 15px    
     line-height: 24px
+    margin-left: -2px
     &__left
-      min-width: 230px
+      max-width: 236px
       width: 50%
     &__right  
       padding-right: 10px     
@@ -56,8 +63,9 @@
     color: $text-color
     letter-spacing: -0.4px
     +bold
-
-
+#form
+  &-clean2
+    padding-left: 30px
 @media (max-width: 1200px)
   .offer    
     &-block

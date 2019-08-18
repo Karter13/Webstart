@@ -797,7 +797,7 @@ label.invalid {
 
 /*Импорт стилей шапки*/
 .navbar {
-  padding: 8px 0;
+  padding: 7px 0;
 }
 
 .navbar-block {
@@ -837,6 +837,7 @@ label.invalid {
 }
 
 .navbar__button {
+  outline: none;
   margin-left: 30px;
   font-size: 12px;
 }
@@ -866,7 +867,7 @@ label.invalid {
 
 @media (min-width: 1200px) {
   .navbar__logo {
-    margin-top: 1px;
+    margin-top: 2px;
     margin-left: -1px;
   }
   .navbar__button {
@@ -945,11 +946,11 @@ label.invalid {
   color: #333333;
   font-size: 39.3px;
   line-height: 55px;
-  margin-left: 0;
+  margin-left: -2px;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 40px;
-  margin-top: 24px;
+  margin-top: 25px;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
 }
@@ -958,7 +959,7 @@ label.invalid {
   display: inline-block;
   color: #333333;
   font-size: 19px;
-  margin-bottom: 66px;
+  margin-bottom: 68px;
   letter-spacing: 0.2px;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
@@ -976,11 +977,12 @@ label.invalid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 }
 
 .hero-list__item:last-child {
   margin-bottom: 0;
+  margin-top: -5px;
 }
 
 .hero-list__image {
@@ -997,11 +999,13 @@ label.invalid {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  margin-right: 26px;
+  margin-right: 28px;
 }
 
 .hero-list__text {
-  max-width: 300px;
+  line-height: 24px;
+  max-width: 277px;
+  width: 100%;
   font-size: 14px;
 }
 
@@ -1113,6 +1117,7 @@ label.invalid {
   background-position: center right;
   background-size: contain;
   position: relative;
+  padding-bottom: 87px;
 }
 
 .offer:before {
@@ -1135,15 +1140,21 @@ label.invalid {
   line-height: 35px;
   margin-bottom: 18px;
   letter-spacing: -0.5px;
+  margin-top: 3px;
   text-align: left;
 }
 
 .offer__subtitle {
   max-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+}
+
+.offer__form {
+  margin-bottom: -3px;
 }
 
 .offer__input {
+  outline: none;
   margin-bottom: 30px;
   width: 240px;
 }
@@ -1157,6 +1168,7 @@ label.invalid {
 }
 
 .offer__button {
+  outline: none;
   max-width: 495px;
   width: 100%;
   min-height: 70px;
@@ -1177,10 +1189,11 @@ label.invalid {
   width: 100%;
   font-size: 15px;
   line-height: 24px;
+  margin-left: -2px;
 }
 
 .offer-info__left {
-  min-width: 230px;
+  max-width: 236px;
   width: 50%;
 }
 
@@ -1198,6 +1211,10 @@ label.invalid {
   letter-spacing: -0.4px;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
+}
+
+#form-clean2 {
+  padding-left: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -1308,7 +1325,7 @@ label.invalid {
   font-size: 29px;
   max-width: 786px;
   margin: auto;
-  margin-top: 13px;
+  margin-top: 16px;
   margin-bottom: 91px;
   line-height: 45px;
 }
@@ -1352,11 +1369,14 @@ label.invalid {
 .price__title {
   text-align: center;
   margin: auto;
+  letter-spacing: -0.5px;
   font-size: 30px;
   line-height: 45px;
-  max-width: 500px;
+  max-width: 540px;
+  width: 100%;
+  padding-left: 4px;
   margin-bottom: 38px;
-  margin-top: 14px;
+  margin-top: 12px;
   font-family: 'Museo Sans Cyrl bold', sans-serif;
   font-weight: 700;
 }
@@ -1367,6 +1387,7 @@ label.invalid {
   font-size: 20px;
   line-height: 45px;
   margin-bottom: 48px;
+  padding-left: 5px;
 }
 
 .price__card {
@@ -1400,9 +1421,11 @@ label.invalid {
 }
 
 .card__title {
-  margin-left: 10px;
+  margin-left: 8px;
   margin-top: 0;
+  margin-bottom: 23px;
   font-size: 18px;
+  letter-spacing: -0.3px;
 }
 
 .card__image {
@@ -1548,10 +1571,11 @@ label.invalid {
           align-items: center;
   border-radius: 50%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .step__text {
+  line-height: 20px;
   font-size: 14px;
   min-width: 150px;
   margin: auto;
@@ -1559,18 +1583,22 @@ label.invalid {
 
 .steps {
   padding-top: 42px;
+  padding-bottom: 95px;
 }
 
 .steps__title {
-  max-width: 651px;
+  max-width: 675px;
   font-size: 30px;
   line-height: 46px;
+  letter-spacing: -0.5px;
   margin: auto;
-  margin-bottom: 49px;
+  margin-top: 2px;
+  margin-bottom: 48px;
 }
 
 .steps__subtitle {
   text-align: center;
+  padding-left: 5px;
   margin-bottom: 68px;
   font-size: 20px;
 }
@@ -1668,12 +1696,14 @@ label.invalid {
 }
 
 .brif__input {
+  outline: none;
   width: 100%;
   max-width: 370px;
   margin-bottom: 15px;
 }
 
 .brif__button {
+  outline: none;
   height: 70px;
   width: 100%;
   max-width: 370px;
@@ -1943,18 +1973,19 @@ label.invalid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 6px;
   margin: 100px auto 100px;
 }
 
 .poster__card {
   height: 410px;
   max-width: 370px;
-  width: 30%;
+  width: 32%;
   margin-right: 30px;
 }
 
 .poster__card:last-child {
-  margin-right: 0;
+  margin-right: -3px;
 }
 
 .poster_left {
@@ -1975,7 +2006,7 @@ label.invalid {
 .poster__text {
   font-size: 16px;
   line-height: 23px;
-  margin: 23px 40px 0 27px;
+  margin: 22px 40px 0 26px;
 }
 
 .poster_bold {
@@ -2429,7 +2460,7 @@ label.invalid {
     width: 100%;
     max-width: 100px;
   }
-  .restroom__info {
+  .restroom__infoя {
     max-width: 175px;
     width: 100%;
     margin-left: 30px;
@@ -2930,6 +2961,7 @@ label.invalid {
 }
 
 .modal__input {
+  outline: none;
   max-width: 370px;
   width: 100%;
 }
@@ -2943,6 +2975,7 @@ label.invalid {
 }
 
 .modal__button {
+  outline: none;
   max-width: 370px;
   width: 100%;
   font-size: 16px;
