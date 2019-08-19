@@ -1,5 +1,5 @@
 .hero
-  padding: 50px 0  
+  padding: 50px 0
   background-color: $herobgc-color
   &-block
     display: flex 
@@ -81,38 +81,8 @@
       &__item
         margin-bottom: 20px
 @media (max-width: 567px)
-   .hero
-    padding: 45px 0 
-    &-text
-      &__title
-        line-height: 28px
-        padding-right: 0
-        margin-bottom: 7px  
-        margin-top: 0
-        font-size: 23.5px
-        letter-spacing: -0.4px
-        margin-left: 8px
-      &__subtitle
-        font-size: 15px
-        margin-bottom: 27px 
-        margin-left: 10px 
-        line-height: 20px
-    &-list      
-      &__text
-        font-size: 11px
-        width: 85%        
-      &__image
-        margin-right: 16px 
-        min-width: 40px         
-        margin-left: 7px
-    &-image
-      width: 92.8%
-      margin-left: 9px
-
-
-@media (max-width: 320px)  
   .hero
-    padding: 45px 0 
+    padding: 43px 0 50px
     &-text
       &__title
         line-height: 28px
@@ -128,12 +98,55 @@
         margin-left: 10px 
         line-height: 20px
     &-list
+      &_second
+        margin-bottom: 25px !important       
       &__text
         font-size: 11px
+        width: 85% 
+        line-height: 14px 
+        letter-spacing: 0.5px      
       &__image
         margin-right: 16px 
         min-width: 40px         
         margin-left: 7px
+      &__item
+        margin-bottom: 16px  
+    &-image
+      width: 92.8%
+      margin-left: 9px
+  .text
+    &_second
+      margin-top: 4px         
+@media (max-width: 320px)  
+  .hero
+    padding: 43px 0 50px 
+    &-text
+      &__title
+        line-height: 28px
+        padding-right: 0
+        margin-bottom: 7px  
+        margin-top: 0
+        font-size: 23.5px
+        letter-spacing: -0.31px
+        margin-left: 8px
+      &__subtitle
+        font-size: 15px
+        margin-bottom: 27px 
+        margin-left: 10px 
+        line-height: 20px
+    &-list
+      &_second
+        margin-bottom: 25px !important        
+      &__text
+        font-size: 11px
+        line-height: 14px
+        letter-spacing: 0.5px
+      &__image
+        margin-right: 16px 
+        min-width: 40px         
+        margin-left: 7px
+      &__item
+        margin-bottom: 20px   
     &-image
       width: 92.8%
       margin-left: 9px
