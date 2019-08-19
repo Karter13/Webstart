@@ -132,14 +132,13 @@
                     </span>
                     <!-- /.section-subtitle -->
 
-                    <form action="#" id="offer-form" onsubmit="ym(54896380, 'reachGoal', 'form '); return true;"
+                    <form action="#" id="offer-form" class="form" onsubmit="ym(54896380, 'reachGoal', 'form '); return true;"
                         class="form offer__form">
                         <input type="text" id="form-clean1" name="username" class="input offer__input wow bounceInLeft"
                             data-wow-delay="0.6s" data-wow-offset="100" placeholder="Ваше имя" required minlength="2"
                             maxlength="15">
-                        <input type="tel" id="form-clean2" name="phone"
-                            class="input offer__input wow bounceInLeft phone" data-wow-delay="0.2s"
-                            data-wow-offset="100" placeholder="Ваш телефон" required>
+                        <input type="tel" id="form-clean2" name="phone" class="input offer__input wow bounceInLeft phone"
+                            data-wow-delay="0.2s" data-wow-offset="100" placeholder="Ваш телефон" required>
                         <button class="button offer__button wow bounceInLeft" data-wow-delay="0.9s">
                             Получить бесплатный дизайн-проект
                         </button>
@@ -176,15 +175,13 @@
                 <div class="slider">
                     <div class="slider__item slider_left wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="300"><img
                             class="slider__image" src="img/portfolio/slider1.jpg" alt="business room"></div>
-                    <div class="slider__item wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="300"><img
-                            class="slider__image" src="img/portfolio/slider2.jpg" alt="guest room"></div>
+                    <div class="slider__item wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="300"><img class="slider__image"
+                            src="img/portfolio/slider2.jpg" alt="guest room"></div>
                     <div class="slider__item slider_right wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="300"><img
                             class="slider__image" src="img/portfolio/slider3.jpg" alt="bedroom">
                     </div>
-                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider1.jpg"
-                            alt="business room"></div>
-                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider2.jpg"
-                            alt="guest room"></div>
+                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider1.jpg" alt="business room"></div>
+                    <div class="slider__item"><img class="slider__image" src="img/portfolio/slider2.jpg" alt="guest room"></div>
                     <div class="slider__item"><img class="slider__image" src="img/portfolio/slider3.jpg" alt="bedroom">
                     </div>
                 </div>
@@ -316,40 +313,40 @@
                 <!-- /.section-subtitle steps__subtitle -->
 
                 <div class="steps-block">
-                    <div class="step">
-                        <div class="step__image">
+                    <div class="step step-block_ferst">
+                        <div class="step__image image_ferst">
                             <img src="img/step/woman.png" alt="woman">
                         </div>
                         <p class="step__text">
                             Вы звоните нам <br> или оставляете заявку
                         </p>
                     </div>
-                    <div class="step">
-                        <div class="step__image">
+                    <div class="step step-block_second">
+                        <div class="step__image image_second">
                             <img src="img/step/wall-clock.png" alt="wall-clock">
                         </div>
                         <p class="step__text">
                             Согласуем удобное <br> для Вас время выезда <br> специалиста на замер
                         </p>
                     </div>
-                    <div class="step">
-                        <div class="step__image">
+                    <div class="step step-block_thord">
+                        <div class="step__image image_thord">
                             <img src="img/step/money.png" alt="money">
                         </div>
                         <p class="step__text">
                             Рассчитываем смету <br> согласовываем <br> с Вами
                         </p>
                     </div>
-                    <div class="step">
-                        <div class="step__image">
+                    <div class="step step-block_forth">
+                        <div class="step__image image_forth">
                             <img src="img/step/document.png" alt="document">
                         </div>
                         <p class="step__text">
                             Подписываем договор <br> закупаем материал <br> по оптовым ценам
                         </p>
                     </div>
-                    <div class="step">
-                        <div class="step__image">
+                    <div class="step step-block_fivz">
+                        <div class="step__image image_fivz">
                             <img src="img/step/calendar.png" alt="calendar">
                         </div>
                         <p class="step__text">
@@ -375,14 +372,14 @@
             <div class="materials-posters">
                 <div class="poster poster__card poster_left">
 
-                    <p class="poster__text">
+                    <p class="poster__text materials_left">
                         Поможем закупить все материалы <br> по оптовым ценам у проверенных поставщиков
                     </p>
 
                 </div>
                 <div class="poster poster__card poster_center">
 
-                    <p class="poster__text">
+                    <p class="poster__text materials_center">
                         Мы дадим Вам
                         <span class="poster_bold">максимальные скидки</span> <br> у наших партнеров для закупки
                         материалов
@@ -392,7 +389,7 @@
                 </div>
                 <div class="poster poster__card poster_right">
 
-                    <p class="poster__text">
+                    <p class="poster__text materials_right">
                         Все, что не сможете найти в городе - поможем заказать <span class="poster_bold">у проверенных
                             поставщиков
                         </span>
@@ -453,9 +450,9 @@
                             Для этого заполните форму ниже
                         </span>
 
-                        <form action="#" id="brif-form">
-                            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
-                            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+                        <form action="#" id="brif-form" class="form">
+                            <input type="text" id="brif-clean1" name="username" class="input brif__input" placeholder="Ваше имя">
+                            <input type="tel" id="brif-clean2" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
                             <button class="button brif__button">Рассчитать стоимость</button>
                             <span class="form__description">
                                 Мы перезвоним Вам в течение 60 секунд
@@ -495,10 +492,10 @@
                     </span>
                     <!-- /.section-subtitle -->
 
-                    <form action="#" id="modal-form" class="form modal__form">
-                        <input type="text" name="username" class="input modal__input modal__name"
+                    <form action="#" id="modal-form" class="modal__form">
+                        <input type="text" id="modal-clean1" name="username" class="input modal__input modal__name"
                             placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input modal__input modal__phone phone"
+                        <input type="tel" id="modal-clean2" name="phone" class="input modal__input modal__phone phone"
                             placeholder="Ваш телефон">
                         <button class="button modal__button">
                             Узнать стоимость
@@ -560,8 +557,8 @@
                             </span>
                             <span class="contacts-list__text">
                                 Телефон: <br>
-                                <a href="tel:+7(495)42-251-31" class="contacts-list__tel"><b
-                                        class="contacts-list_bold">+ 7 (495)
+                                <a href="tel:+7(495)42-251-31" class="contacts-list__tel"><b class="contacts-list_bold">+
+                                        7 (495)
                                         42-251-31</b></a>
                             </span>
                         </li>
@@ -572,7 +569,12 @@
             </div>
         </div>
     </footer>
-
+    <div class="thankyou">
+        <div class="thanks">
+            <div class="ty-close">&times;</div>
+            <h5>Спасибо мы вам перезвоним</h5>
+        </div>
+    </div>
     <div id="button-up">
         <img src="img/icon_button/icon_top.png" alt="">
     </div>
@@ -585,17 +587,83 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
 
+    <style>
+        .thankyou {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .thanks {
+            position: relative;
+            width: 290px;
+            height: 200px;
+            background: yellow;
+            color: #000;
+            line-height: 160px;
+            text-align: center;
+        }
+
+        .ty-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
 
     <script>
         /*Инициализация WOW.JS*/
         new WOW().init();
-
+        $('.thankyou').hide();
         $(document).ready(function () {
-
-            /*Валидация форм*/
+            /*Обработка и отправка формы через AJAX */
+            $(".form").submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "mail.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function (data) {
+                        $(".success").html(data + ", Ваша форма отправлена");
+                        $('.thankyou').show();
+                        $('#modal').removeClass('modal_activ');
+                        // $(".modal").addClass("modal_activ"); // активация модального окна при верной отпраке
+                        $("#form-clean1").val("");
+                        $("#form-clean2").val("");
+                    }
+                });
+            });
+            $('.ty-close').click(function (e) {
+                e.preventDefault();
+                $('.thankyou').hide();
+                $('.modal').removeClass('modal_activ');
+            })
+            $("#modal-form").submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "mail.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function (data) {
+                        $(".success").html(data + ", Ваша форма отправлена");
+                        $('#modal-form').removeClass('modal_activ');
+                        $('.thankyou').show();
+                        // $(".modal").addClass("modal_activ"); // активация модального окна при верной отпраке
+                        $("#form-clean1").val("");
+                        $("#form-clean2").val("");
+                    }
+                });
+            });
+            /*Валидация форм
             $("#brif-form").validate({
-
                 errorClass: "invalid",
                 rules: {
                     username: {
@@ -668,7 +736,7 @@
                     }
                 }
             });
-
+*/
             /*Меняем ted label на div в формах*/
 
             // $('label.invalid').replaceWith(function () {

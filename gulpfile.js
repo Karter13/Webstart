@@ -50,4 +50,4 @@ gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 
   done();
 }))
 
-// exports.default = defaultTask
+// exports.default = defaultTask 
